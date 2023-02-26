@@ -5,9 +5,5 @@ numpy
 streamlit
 openpyxl
 plotly-express
-<<<<<<< HEAD
-gspread
-=======
 gspread
 Image
->>>>>>> medhas
