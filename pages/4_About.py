@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image
+# from PIL import Image
 # import os
 
 st.set_page_config(page_title="About Us", layout= "wide")
@@ -13,8 +13,8 @@ st.title("Our Team")
 # files = os.listdir('medhaheadshot')
 # for file in files:
 #     img = Image.open(os.path.join('WattByWatt', file))
-image = Image.open("medhaheadshot.jpg")
-st.image(image)
+# image = Image.open("medhaheadshot.jpg")
+# st.image(image)
 st.subheader('Medha Sarkar')
 st.write('Medha is a second-year Economics major with a Computer Science minor who splits her time between learning new data visulaization/cleansing softwares and techniques, mentoring business students in career development workshops, and working on a music production capstone project.')
 st.write('She is interested in data analytics and consulting, and in the future would like to be a strategy or technology consultant, and become an expert with data, bridging the gap between data and business processes.')
