@@ -13,7 +13,7 @@ st.write("Here, you can find different lists and charts detailing the environmen
 
 # List 1: Average Energy Usage
 st.subheader('Average Energy Usage')
-st.write('Calculating the energy usage of households and individuals depending on county! Select an option below to begin.')
+st.write('Select an option below to begin.')
 
 countySelect = st.selectbox(
        "Choose a county:", 
@@ -22,6 +22,8 @@ countySelect = st.selectbox(
 gc = gspread.service_account(filename='/Users/mj/Desktop/WATTSSSS/WattByWatt/.venv/lib/python3.11/site-packages/gspread/watt-by-watt-database-abb4a6c70d6c.json')
 sh = gc.open("WattByWatt")
 worksheet = sh.worksheet('AverageEnergyUsage')
+
+st.write("Calculating the energy usage of households and individuals depending on county!")
 
 
 #list 1.1
