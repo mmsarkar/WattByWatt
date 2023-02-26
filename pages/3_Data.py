@@ -6,7 +6,7 @@ st.set_page_config(page_title="Energy and Finance Data", layout= "wide")
 
 # Intro to page
 st.title('Energy and Finance Compendium')
-st.subheader("*Where environmentalists meet economists!")
+st.subheader("*Where environmentalists meet economists!*")
 st.write("Here, you can find different lists and charts detailing the environmental impacts and financial accessibility of sustainable practices.")
 
 # List 1: Average Energy Usage
@@ -26,3 +26,4 @@ if countySelect == "Orange":
 #list 1.3
 if countySelect == "Riverside":
     st.subheader("Riverside County")
+    
