@@ -20,7 +20,7 @@ householdNumber = st.number_input('*Choose a number...*', min_value = 1, max_val
 
 #question 3
 st.write('Which of the following would you like to try or learn more about?')
-selectedActions = st.multiselect('*Select an option/options...*', ['Solar Panels', 'Sustainable Transportation', 'Eco-Driving'])
+selectedActions = st.multiselect('*Select an option/options...*', ['Solar Panels', 'Sustainable Transportation', 'Eco-Driving', 'Sustainable Shower Heads'])
 
 #Done button:
 st.write('Click the button to complete the survey!')
