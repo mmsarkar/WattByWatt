@@ -33,24 +33,24 @@ worksheet = sh.worksheet('AverageEnergyUsage')
 #results from buttons:
 if isFinished == True:
     if (countyChoice == 'Los Angeles'):
-        lacEnergyOne = worksheet.acell('B6').value
+        lacEnergyOne = int(worksheet.acell('B6').value)
         lacEnergyHome = lacEnergyOne * householdNumber
-        st.write('In L.A. county, the typical energy usage of an individual is ', lacEnergyHome, 'in kilowatt hours.')
-        st.write ('For your household of ', householdNumber, 'the estimated energy usage is ', lacEnergyHome, ' in kilowatt hours.')
+        st.write('In L.A. county, the typical energy usage of an individual is ', lacEnergyHome, ' kilowatt hours.')
+        st.write ('For your household of ', householdNumber, ' the estimated energy usage is ', lacEnergyHome, ' kilowatt hours.')
         st.write('You selected: ', selectedActions)
 
     if (countyChoice == 'Orange'):
-        ocEnergyOne = worksheet.acell('C6').value
+        ocEnergyOne = int(worksheet.acell('C6').value)
         ocEnergyHome = ocEnergyOne * householdNumber
-        st.write('In Orange county, the typical energy usage of an individual is ', ocEnergyHome, 'in kilowatt hours.')
-        st.write ('For your household of ', householdNumber, 'the estimated energy usage is ', ocEnergyHome, ' in kilowatt hours.')
+        st.write('In Orange county, the typical energy usage of an individual is ', ocEnergyHome, ' kilowatt hours.')
+        st.write ('For your household of ', householdNumber, ' the estimated energy usage is ', ocEnergyHome, ' kilowatt hours.')
         st.write('You selected: ', selectedActions)
 
     if (countyChoice == 'Riverside'):
-        rcEnergyOne = worksheet.acell('D6').value
+        rcEnergyOne = int(worksheet.acell('D6').value)
         rcEnergyHome = rcEnergyOne * householdNumber
-        st.write ('In L.A. county, the typical energy usage of an individual is ', lacEnergyHome, 'in kilowatt hours.')
-        st.write ('For your household of ', householdNumber, 'the estimated energy usage is ', lacEnergyHome, ' in kilowatt hours.')
+        st.write ('In L.A. county, the typical energy usage of an individual is ', lacEnergyHome, ' kilowatt hours.')
+        st.write ('For your household of ', householdNumber, ' the estimated energy usage is ', lacEnergyHome, ' kilowatt hours.')
         st.write('You selected: ', selectedActions)
 
 st.subheader('Interested in more sustainable practices?')
