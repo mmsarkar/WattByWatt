@@ -1,0 +1,5 @@
+# if you do pip install -r requirements.txt
+
+pandas
+numpy
+streamlit
