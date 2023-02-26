@@ -3,3 +3,7 @@
 pandas
 numpy
 streamlit
+openpyxl
+plotly-express
+gspread
+Image

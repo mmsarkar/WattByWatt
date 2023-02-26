@@ -29,6 +29,7 @@ if countySelect == "Los Angeles":
     st.subheader("Los Angeles County")
     
     #opens the energy usage spreadsheet (google, using Google SHeets API)
+
     eu_read = get_as_dataframe(worksheet, usecols = [0, 1], nrows = 5)
     eu_read
     #s_range = sh.worksheet("AverageEnergyUsage")
@@ -41,6 +42,7 @@ if countySelect == "Los Angeles":
 if countySelect == "Orange":
     st.subheader("Orange County")
     eu_read = get_as_dataframe(worksheet, usecols = [0, 2], nrows = 5)
+
     eu_read
 #list 1.3
 if countySelect == "Riverside":
