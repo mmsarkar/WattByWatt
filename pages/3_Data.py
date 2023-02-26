@@ -23,12 +23,14 @@ gc = gspread.service_account(filename='/Users/mj/Desktop/WATTSSSS/WattByWatt/.ve
 sh = gc.open("WattByWatt")
 worksheet = sh.worksheet('AverageEnergyUsage')
 
+
 #list 1.1
 if countySelect == "Los Angeles":
     st.subheader("Los Angeles County")
     
     #opens the energy usage spreadsheet (google, using Google SHeets API)
-    eu_read = get_as_dataframe(worksheet, usecols = [0, 1], nrows = 6)
+
+    eu_read = get_as_dataframe(worksheet, usecols = [0, 1], nrows = 5)
     eu_read
     #s_range = sh.worksheet("AverageEnergyUsage")
     #for row in s_range:
@@ -39,10 +41,11 @@ if countySelect == "Los Angeles":
 #list 1.2  
 if countySelect == "Orange":
     st.subheader("Orange County")
-    eu_read = get_as_dataframe(worksheet, usecols = [0, 2], nrows = 6)
+    eu_read = get_as_dataframe(worksheet, usecols = [0, 2], nrows = 5)
+
     eu_read
 #list 1.3
 if countySelect == "Riverside":
     st.subheader("Riverside County")
-    eu_read = get_as_dataframe(worksheet, usecols = [0, 3], nrows = 6)
+    eu_read = get_as_dataframe(worksheet, usecols = [0, 3], nrows = 5)
     eu_read
